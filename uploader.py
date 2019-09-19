@@ -41,8 +41,8 @@ for i in range(0,num_lines):
 del urls[0]
 
 
-msg = open('messages.txt')
-lines1 =msg.readlines()
+msg = open('messages.txt', encoding="utf-8")
+lines1 = msg.readlines()
 num_lines = sum(1 for line in open('messages.txt'))
 for i in range(0,num_lines):
     lines1[i]=lines1[i].strip()
