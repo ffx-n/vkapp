@@ -41,7 +41,7 @@ for i in range(0,num_lines):
 del urls[0]
 
 
-msg = open('messages.txt', encoding="utf-8")
+msg = open('messages.txt', encoding= "ISO-8859-1")
 lines1 = msg.readlines()
 num_lines = sum(1 for line in open('messages.txt'))
 for i in range(0,num_lines):
