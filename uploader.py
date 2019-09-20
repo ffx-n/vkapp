@@ -84,11 +84,6 @@ def get_postid(url,headers):
     if request.status_code == 200:
         soup = bs(request.content, 'lxml')
         zakrep = soup.find_all('div', attrs={'id': 'wall_fixed'})
-
-        posts = soup.find_all('div', attrs={'class': 'wall_post_cont'})
-        if len(zakrep)==0:
-            post_id_code = posts[0]['id'] #Для групп без закрепа
-            post_id=post_id_code[post_id_code.find('_')+1:len(post_id_code)]
         if len(zakrep)>0:
             post_id_code = posts[1]['id']  # Для групп с закрепом
             post_id = post_id_code[post_id_code.find('_') + 1:len(post_id_code)]
