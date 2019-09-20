@@ -41,9 +41,9 @@ for i in range(0,num_lines):
 del urls[0]
 
 
-msg = open('messages.txt', encoding= "windows-1251")
+msg = open('messages.txt', encoding= "UTF-8")
 lines1 = msg.readlines()
-num_lines = sum(1 for line in open('messages.txt', encoding = "windows-1251"))
+num_lines = sum(1 for line in open('messages.txt', encoding = "UTF-8"))
 for i in range(0,num_lines):
     lines1[i]=lines1[i].strip()
     messages.append(lines1[i])
