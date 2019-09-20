@@ -152,6 +152,6 @@ while True:
     a = get_postid(urls[0],headers)
     sendd_comment(a,0)
     print(f'Отдыхаю, чтобы не забанило')
-    time.sleep(random.randint(85,145))
+    time.sleep(random.randint(62,80))
 
 #https://api.vk.com/method/friends.getRequests?offset=0&count=10&extended=0&need_mutual=0&&access_token=b96b0adfc342831bbc4f4b8fb17f3edaf2585816bb03f6c74442c43074d565004eb4b3b50b5c7627cbd65&v=5.101
