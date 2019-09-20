@@ -41,9 +41,9 @@ for i in range(0,num_lines):
 del urls[0]
 
 
-msg = open('messages.txt', encoding= "ISO-8859-1")
+msg = open('messages.txt', encoding= "windows-1251")
 lines1 = msg.readlines()
-num_lines = sum(1 for line in open('messages.txt', encoding = "ISO-8859-1"), )
+num_lines = sum(1 for line in open('messages.txt', encoding = "windows-1251"))
 for i in range(0,num_lines):
     lines1[i]=lines1[i].strip()
     messages.append(lines1[i])
@@ -152,6 +152,6 @@ while True:
     a = get_postid(urls[0],headers)
     sendd_comment(a,0)
     print(f'Отдыхаю, чтобы не забанило')
-    time.sleep(random.randint(85,145))
+    time.sleep(random.randint(50,85))
 
 #https://api.vk.com/method/friends.getRequests?offset=0&count=10&extended=0&need_mutual=0&&access_token=b96b0adfc342831bbc4f4b8fb17f3edaf2585816bb03f6c74442c43074d565004eb4b3b50b5c7627cbd65&v=5.101
