@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import random
 import time
+import os
 import threading
 
 headers = {'accept':'*/*',
