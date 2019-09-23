@@ -48,11 +48,12 @@ for i in range(0,num_lines):
     lines1[i]=lines1[i].strip()
     messages.append(lines1[i])
 del messages[0]
-
+'''
 token = open('access_token.txt')
 lines2 = token.readlines()
 access_token = lines2[0]
-
+'''
+access_token = os.environ.get('token1')
 
 f = open('groups.txt')
 lines3 =f.readlines()
