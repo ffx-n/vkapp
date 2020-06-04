@@ -7,25 +7,6 @@ import threading
 
 headers = {'accept':'*/*',
            'user-agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'}
-'''
-Client = 'Client1'
-protection = 'https://ffxgamers1.wixsite.com/clients'
-
-session = requests.Session()
-request = session.get(protection, headers=headers)
-if request.status_code==200:
-    soup = bs(request.content, 'html.parser')
-    span =soup.find_all('span', attrs={'class':'color_15'})[-1].text
-    registred = span.find(f'{Client}')
-    if registred>=0:
-        print('Вы пользуетесь бесплатной версией первонаха. Проверка пройдена, начинаю работу!')
-    else:
-        print('Поддержка бесплатной версии окончена. Для обновления обратитесь в telegram - @Dream7776')
-        time.sleep(100000)
-
-else:
-    print('Проверка лицензии не удалась. Сервер недоступен')
-'''
 
 messages = ['']
 owner_ids=['']
